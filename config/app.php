@@ -163,6 +163,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
         /*
          * Package Service Providers...
          */
@@ -171,11 +172,12 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        viewjs\Providers\AppServiceProvider::class,
+        viewjs\Providers\AuthServiceProvider::class,
+        // viewjs\Providers\BroadcastServiceProvider::class,
+        viewjs\Providers\EventServiceProvider::class,
+        viewjs\Providers\RouteServiceProvider::class,
+        viewjs\Providers\RepositoryServiceProvider::class,
 
     ],
 
